@@ -69,3 +69,5 @@ play -n synth brownnoise # play brown noise with sox
  
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+
+# exclude private files from Git repository by adding them to the .git/info/exclude in the project repository
