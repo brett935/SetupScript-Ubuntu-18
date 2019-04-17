@@ -1,0 +1,71 @@
+# Some things aren't setup automatically here is notes for configuring them
+
+# Google Docs Offline
+Install and enable Google Docs offline Chrome extension
+Open Chrome. Make sure you're signed in to Chrome.
+Go to drive.google.com/drive/settings.
+Check the box in the Offline category next to "Sync Google Docs, Sheets, Slides & Drawings files to this computer so that you can edit offline."
+
+# Enable Chrome Developer Tools Dark Theme/Mode
+Open Chrome Inspector
+Click the three dots in the top right corner
+Click Settings
+Select the theme drop down and choose Dark
+
+# Install Augury
+# https://augury.rangle.io/
+Open Chrome Inspector
+Click Augury
+Click the three dots in the top right corner of the plugin
+Select Dark Mode under Theme
+
+# Install AdBlockPlus
+# https://adblockplus.org/en/
+
+# Install Lastpass
+# https://lastpass.com
+
+
+To take a screenshot of the entire desktop using gnome-screenshot press PrtScr
+To take a screenshot of the window under your pointer press Alt+PrtScr
+To take a screenshot of an area that you select press Shift+PrtScr
+To record a screencasts press Ctrl+Alt+Shift+R
+To stop recording and save the video in your Videos folder press Ctrl+Alt+Shift+R again
+
+apt -y install gnustep-gui-runtime
+# apt -y install festival
+# apt -y install speech-dispatcher
+# apt -y install espeak
+
+apt -y install python-pip
+apt -y install mpg123
+pip install gTTS # Google Text to Speech
+# gtts-cli "why, hello there" | mpg123
+
+google-chrome --remote-debugging-port=9222 # so that VSCode can attach a debugger
+google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug # if you already have Chrome open and want to open a new window with remote debugging
+# there might be a way to enable this from the GUI by doing: Open Inspector-> Click three dots -> More Tools -> Remote Devices -> Port Forwarding
+
+# to set startup applications in Ubuntu type Windows (Super Key) then type Startup applications
+
+
+Added ~/.ssh/config file with contents:
+Host github.rds.lexmark.com
+    IdentityFile ~/.ssh/work-github.key
+
+ssh-add -l # show keys in ssh-agent
+
+# setting up ssh keys
+# to add an ssh key (don't think that we need ssh-agent if we aren't password protecting the private keys, if you enter a password when generating the key you may need ssh-agent)
+cd ~/.ssh/
+ssh-keygen (follow prompt and don't use default name if you are planning on having multiple keys)
+create a file called config with the contents:
+Host hostdomain1.com
+    IdentityFile ~/.ssh/host1.key (host1.key should be whatever you named your private/public key pair)
+Host hostdomain2.com
+    IdentityFile ~/.ssh/host2.key (host2.key should be whatever you named your private/public key pair)
+
+play -n synth brownnoise # play brown noise with sox
+ 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
