@@ -17,6 +17,7 @@ code --install-extension alexiv.vscode-angular2-files
 code --install-extension natewallace.angular2-inline
 code --install-extension infinity1207.angular2-switcher
 code --install-extension markis.code-coverage
+code --install-extension mkaufman.HTMLHint
 
 echo -e "\e[32m !---------- Active ----------! \e[0m"
 code --list-extensions

@@ -41,6 +41,8 @@ apt -y install python-pip
 apt -y install mpg123
 pip install gTTS # Google Text to Speech
 # gtts-cli "why, hello there" | mpg123
+# https://www.youtube.com/watch?v=dwa-n3zaqTg
+apt -y install python3-pip
 
 google-chrome --remote-debugging-port=9222 # so that VSCode can attach a debugger
 google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug # if you already have Chrome open and want to open a new window with remote debugging
@@ -66,8 +68,12 @@ Host hostdomain2.com
     IdentityFile ~/.ssh/host2.key (host2.key should be whatever you named your private/public key pair)
 
 play -n synth brownnoise # play brown noise with sox
- 
+play -n synth brownnoise vol 0.02
+
+# configure Git email and username
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
 # exclude private files from Git repository by adding them to the .git/info/exclude in the project repository
+
+# install Chrome Batarang Extension for AngularJS

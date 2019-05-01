@@ -41,6 +41,7 @@ echo -e "\e[31m !---------- Installer Script Starting ----------! \e[0m"
 ./install-cowsay-fortune.sh
 ./configure-bashrc.sh
 ./install-tmpreaper.sh
+./disable-dualpoint-mouse-stick.sh
 
 # add multitouch gestures to switch virtual desktops like a mac
 
