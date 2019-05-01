@@ -43,6 +43,7 @@ echo -e "\e[31m !---------- Installer Script Starting ----------! \e[0m"
 ./install-tmpreaper.sh
 ./disable-dualpoint-mouse-stick.sh
 ./install-etcher.sh
+./install-gTTS.sh
 
 # add multitouch gestures to switch virtual desktops like a mac
 
